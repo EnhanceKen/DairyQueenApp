@@ -12,6 +12,10 @@
 		023B23FC294809AF0059654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FB294809AF0059654C /* Assets.xcassets */; };
 		023B23FF294809AF0059654C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FE294809AF0059654C /* Preview Assets.xcassets */; };
 		023B2406294814F80059654C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B2405294814F80059654C /* SignInView.swift */; };
+		02F7041D294822FE003A68AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F7041C294822FE003A68AD /* GoogleService-Info.plist */; };
+		02F7041F29482412003A68AD /* DQViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7041E29482412003A68AD /* DQViewModel.swift */; };
+		02F704212948358C003A68AD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F704202948358C003A68AD /* SignUpView.swift */; };
+		7D19C7E0F169D586E409E2EA /* Pods_DQApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D107EBE4ACB94F46C05A8A /* Pods_DQApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,12 @@
 		023B23FB294809AF0059654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		023B23FE294809AF0059654C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		023B2405294814F80059654C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		02F7041C294822FE003A68AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02F7041E29482412003A68AD /* DQViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQViewModel.swift; sourceTree = "<group>"; };
+		02F704202948358C003A68AD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		393DD81B0BB475D40ACFB154 /* Pods-DQApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQApp.debug.xcconfig"; path = "Target Support Files/Pods-DQApp/Pods-DQApp.debug.xcconfig"; sourceTree = "<group>"; };
+		71FE20A91350784331AFE3EC /* Pods-DQApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQApp.release.xcconfig"; path = "Target Support Files/Pods-DQApp/Pods-DQApp.release.xcconfig"; sourceTree = "<group>"; };
+		85D107EBE4ACB94F46C05A8A /* Pods_DQApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DQApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D19C7E0F169D586E409E2EA /* Pods_DQApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +50,8 @@
 			children = (
 				023B23F6294809AD0059654C /* DQApp */,
 				023B23F5294809AD0059654C /* Products */,
+				5F77DFA27680136E7D106D42 /* Pods */,
+				D08F7E880981F5CE721D93DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,9 @@
 				023B23F7294809AD0059654C /* DQAppApp.swift */,
 				023B23F9294809AD0059654C /* ContentView.swift */,
 				023B2405294814F80059654C /* SignInView.swift */,
+				02F704202948358C003A68AD /* SignUpView.swift */,
+				02F7041E29482412003A68AD /* DQViewModel.swift */,
+				02F7041C294822FE003A68AD /* GoogleService-Info.plist */,
 				023B23FB294809AF0059654C /* Assets.xcassets */,
 				023B23FD294809AF0059654C /* Preview Content */,
 			);
@@ -70,6 +86,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5F77DFA27680136E7D106D42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				393DD81B0BB475D40ACFB154 /* Pods-DQApp.debug.xcconfig */,
+				71FE20A91350784331AFE3EC /* Pods-DQApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D08F7E880981F5CE721D93DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85D107EBE4ACB94F46C05A8A /* Pods_DQApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 023B2402294809AF0059654C /* Build configuration list for PBXNativeTarget "DQApp" */;
 			buildPhases = (
+				498DC4737445F8300BD73CFA /* [CP] Check Pods Manifest.lock */,
 				023B23F0294809AD0059654C /* Sources */,
 				023B23F1294809AD0059654C /* Frameworks */,
 				023B23F2294809AD0059654C /* Resources */,
+				97051A5BA905AC794E2E3BC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,10 +165,53 @@
 			files = (
 				023B23FF294809AF0059654C /* Preview Assets.xcassets in Resources */,
 				023B23FC294809AF0059654C /* Assets.xcassets in Resources */,
+				02F7041D294822FE003A68AD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		498DC4737445F8300BD73CFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DQApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97051A5BA905AC794E2E3BC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DQApp/Pods-DQApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DQApp/Pods-DQApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DQApp/Pods-DQApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		023B23F0294809AD0059654C /* Sources */ = {
@@ -141,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				023B2406294814F80059654C /* SignInView.swift in Sources */,
+				02F704212948358C003A68AD /* SignUpView.swift in Sources */,
+				02F7041F29482412003A68AD /* DQViewModel.swift in Sources */,
 				023B23FA294809AD0059654C /* ContentView.swift in Sources */,
 				023B23F8294809AD0059654C /* DQAppApp.swift in Sources */,
 			);
@@ -265,6 +345,7 @@
 		};
 		023B2403294809AF0059654C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393DD81B0BB475D40ACFB154 /* Pods-DQApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,6 +374,7 @@
 		};
 		023B2404294809AF0059654C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71FE20A91350784331AFE3EC /* Pods-DQApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -49,7 +49,7 @@ struct RegisterButton: View {
     var body: some View{
         Text("SIGN IN / SIGN UP")
             .foregroundColor(.white)
-            .frame(width: 350, height: 40,
+            .frame(width: 350, height: 35,
                    alignment: .center)
             .background(Color.blue)
             .cornerRadius(20)
