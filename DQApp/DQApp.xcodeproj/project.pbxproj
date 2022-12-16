@@ -15,6 +15,7 @@
 		02F7041D294822FE003A68AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F7041C294822FE003A68AD /* GoogleService-Info.plist */; };
 		02F7041F29482412003A68AD /* DQViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7041E29482412003A68AD /* DQViewModel.swift */; };
 		02F704212948358C003A68AD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F704202948358C003A68AD /* SignUpView.swift */; };
+		02F7043D294A95BE003A68AD /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7043C294A95BE003A68AD /* mapView.swift */; };
 		7D19C7E0F169D586E409E2EA /* Pods_DQApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D107EBE4ACB94F46C05A8A /* Pods_DQApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		02F7041C294822FE003A68AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		02F7041E29482412003A68AD /* DQViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQViewModel.swift; sourceTree = "<group>"; };
 		02F704202948358C003A68AD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		02F7043C294A95BE003A68AD /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
 		393DD81B0BB475D40ACFB154 /* Pods-DQApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQApp.debug.xcconfig"; path = "Target Support Files/Pods-DQApp/Pods-DQApp.debug.xcconfig"; sourceTree = "<group>"; };
 		71FE20A91350784331AFE3EC /* Pods-DQApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQApp.release.xcconfig"; path = "Target Support Files/Pods-DQApp/Pods-DQApp.release.xcconfig"; sourceTree = "<group>"; };
 		85D107EBE4ACB94F46C05A8A /* Pods_DQApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DQApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,11 +68,11 @@
 		023B23F6294809AD0059654C /* DQApp */ = {
 			isa = PBXGroup;
 			children = (
-				023B23F7294809AD0059654C /* DQAppApp.swift */,
-				023B23F9294809AD0059654C /* ContentView.swift */,
-				023B2405294814F80059654C /* SignInView.swift */,
-				02F704202948358C003A68AD /* SignUpView.swift */,
-				02F7041E29482412003A68AD /* DQViewModel.swift */,
+				02F7047A294C450F003A68AD /* Resources */,
+				02F70479294C450D003A68AD /* Network */,
+				02F70478294C450B003A68AD /* ViewModel */,
+				02F70477294C4508003A68AD /* Views */,
+				02F70476294C44F0003A68AD /* Model */,
 				02F7041C294822FE003A68AD /* GoogleService-Info.plist */,
 				023B23FB294809AF0059654C /* Assets.xcassets */,
 				023B23FD294809AF0059654C /* Preview Content */,
@@ -84,6 +86,47 @@
 				023B23FE294809AF0059654C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02F70476294C44F0003A68AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02F70477294C4508003A68AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02F7043C294A95BE003A68AD /* mapView.swift */,
+				02F704202948358C003A68AD /* SignUpView.swift */,
+				023B2405294814F80059654C /* SignInView.swift */,
+				023B23F9294809AD0059654C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02F70478294C450B003A68AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02F7041E29482412003A68AD /* DQViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02F70479294C450D003A68AD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02F7047A294C450F003A68AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				023B23F7294809AD0059654C /* DQAppApp.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5F77DFA27680136E7D106D42 /* Pods */ = {
@@ -223,6 +266,7 @@
 				02F7041F29482412003A68AD /* DQViewModel.swift in Sources */,
 				023B23FA294809AD0059654C /* ContentView.swift in Sources */,
 				023B23F8294809AD0059654C /* DQAppApp.swift in Sources */,
+				02F7043D294A95BE003A68AD /* mapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

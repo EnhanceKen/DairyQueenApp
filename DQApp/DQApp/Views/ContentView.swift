@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
-                Text("Start earning exclusinve rewards, accesing weekly deals, and saving your favorite treats and eats for convenient reordering.")
+                Text("Start earning exclusive rewards, accesing weekly deals, and saving your favorite treats and eats for convenient reordering.")
                 
                     .font(.system(size: 16, weight: .regular, design: .default))
                     .padding(2)

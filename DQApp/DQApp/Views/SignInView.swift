@@ -8,48 +8,6 @@
 import SwiftUI
 import FirebaseAuth
 
-//
-//class DQViewModel: ObservableObject {
-//    let auth = Auth.auth()
-//    
-//    @Published var signedIn = false
-//    
-//    var isSignedIn: Bool {
-//        return auth.currentUser != nil
-//    }
-//    
-//    func signIn(email: String, password: String) {
-//        auth.signIn(withEmail: email,
-//                    password: password) { [weak self] result, error in
-//            guard result != nil, error == nil else {
-//                return
-//            }
-//            DispatchQueue.main.async {
-//                //sucess
-//                self?.signedIn = true
-//            }
-//        }
-//    }
-//    
-//    func signUp(email: String, password: String) {
-//        auth.createUser(withEmail: email,
-//                        password: password) { [weak self] result, error in
-//            guard result != nil, error == nil else {
-//                return
-//            }
-//            DispatchQueue.main.async {
-//                //sucess
-//                self?.signedIn = true
-//            }
-//            
-//        }
-//    }
-//}
-
-
-
-
-
 struct LoginView: View {
     @EnvironmentObject var viewModel: DQViewModel
 
@@ -81,10 +39,12 @@ struct SignInView: View {
         // MARK: VSTACK
         
         VStack{
-            NavigationLink("Creat Account", destination: SignUpView())
+            NavigationLink("Create Account", destination: SignUpView())
                 .frame(alignment: .leading)
+                
             
             TextField("Email Adress", text: $email)
+                .disableAutocorrection(true)
                 .padding(7)
                 .background(Color(.secondarySystemBackground))
                 .frame(width: 350, height: 40)
@@ -92,6 +52,7 @@ struct SignInView: View {
             
             
             SecureField("Password", text: $password)
+                .disableAutocorrection(true)
                 .padding(7)
                 .background(Color(.secondarySystemBackground))
                 .frame(width: 350, height: 40)
@@ -111,6 +72,17 @@ struct SignInView: View {
                     .background(Color.blue)
                     .cornerRadius(20)
             })
+        }
+        
+        HStack{
+            Spacer()
+            Button(action: {
+                // Handles Navigation to forgot Password
+            },label: {
+                Text("Forgot Password")
+                    .offset(x: -215)
+            })
+            .font(.system(size: 16, weight: .bold))
         }
         .padding()
         

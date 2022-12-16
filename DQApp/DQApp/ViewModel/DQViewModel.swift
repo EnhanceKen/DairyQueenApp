@@ -13,6 +13,7 @@ class DQViewModel: ObservableObject {
     let auth = Auth.auth()
     
     @Published var signedIn = false
+    @Published var signedUP = false
     
     var isSignedIn: Bool {
         return auth.currentUser != nil
@@ -31,18 +32,17 @@ class DQViewModel: ObservableObject {
         }
     }
     
-//    func signUp(email: String, password: String, phone: Int) {
-//        auth.createUser(firstName: email,
-//                        lastName: password
-//                        FIRVerifyPhoneNumberRequest: phoneNumber ) { [weak self] result, error in
-//            guard result != nil, error == nil else {
-//                return
-//            }
-//            DispatchQueue.main.async {
-//                //sucess
-//                self?.signedIn = true
-//            }
-//
-//        }
-//    }
+    func signUp(email: String, password: String) {
+        auth.createUser(withEmail: email,
+                        password: password) { [weak self] result, error in
+            guard result != nil, error == nil else {
+                return
+            }
+            DispatchQueue.main.async {
+                //sucess
+                self?.signedUP = true
+            }
+
+        }
+    }
 }
