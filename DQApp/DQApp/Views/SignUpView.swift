@@ -13,7 +13,7 @@ struct signedUpView: View {
     var body: some View {
         NavigationView{
             if viewModel.signedUP{
-              Text("All Signed UP")
+              Menu()
             }
             else {
                 SignInView()
@@ -77,7 +77,7 @@ struct SignUpView: View {
                         
                         
                         .navigationTitle("Lets Get Started")
-            NavigationLink(destination: mapView(), isActive: $isShowingNextView) {
+            NavigationLink(destination: Menu(), isActive: $isShowingNextView) {
                 EmptyView()
             }
             

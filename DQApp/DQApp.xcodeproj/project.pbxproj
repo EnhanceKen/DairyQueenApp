@@ -15,7 +15,14 @@
 		02F7041D294822FE003A68AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F7041C294822FE003A68AD /* GoogleService-Info.plist */; };
 		02F7041F29482412003A68AD /* DQViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7041E29482412003A68AD /* DQViewModel.swift */; };
 		02F704212948358C003A68AD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F704202948358C003A68AD /* SignUpView.swift */; };
-		02F7043D294A95BE003A68AD /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7043C294A95BE003A68AD /* mapView.swift */; };
+		02F7047C294CBD01003A68AD /* DQLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7047B294CBD01003A68AD /* DQLocation.swift */; };
+		02F7047E294E9523003A68AD /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7047D294E9523003A68AD /* Menu.swift */; };
+		02F70480294E9C1B003A68AD /* orderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7047F294E9C1B003A68AD /* orderView.swift */; };
+		02F70483294E9D6C003A68AD /* rewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F70482294E9D6C003A68AD /* rewardView.swift */; };
+		02F70485294E9D80003A68AD /* dealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F70484294E9D80003A68AD /* dealsView.swift */; };
+		02F70487294E9D98003A68AD /* myDQview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F70486294E9D98003A68AD /* myDQview.swift */; };
+		02F70489294E9DDC003A68AD /* currentOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F70488294E9DDC003A68AD /* currentOrderView.swift */; };
+		02F7048C294EA0A6003A68AD /* BottomSheetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7048B294EA0A6003A68AD /* BottomSheetViews.swift */; };
 		7D19C7E0F169D586E409E2EA /* Pods_DQApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D107EBE4ACB94F46C05A8A /* Pods_DQApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +36,14 @@
 		02F7041C294822FE003A68AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		02F7041E29482412003A68AD /* DQViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQViewModel.swift; sourceTree = "<group>"; };
 		02F704202948358C003A68AD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		02F7043C294A95BE003A68AD /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
+		02F7047B294CBD01003A68AD /* DQLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQLocation.swift; sourceTree = "<group>"; };
+		02F7047D294E9523003A68AD /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		02F7047F294E9C1B003A68AD /* orderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderView.swift; sourceTree = "<group>"; };
+		02F70482294E9D6C003A68AD /* rewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rewardView.swift; sourceTree = "<group>"; };
+		02F70484294E9D80003A68AD /* dealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealsView.swift; sourceTree = "<group>"; };
+		02F70486294E9D98003A68AD /* myDQview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDQview.swift; sourceTree = "<group>"; };
+		02F70488294E9DDC003A68AD /* currentOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentOrderView.swift; sourceTree = "<group>"; };
+		02F7048B294EA0A6003A68AD /* BottomSheetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViews.swift; sourceTree = "<group>"; };
 		393DD81B0BB475D40ACFB154 /* Pods-DQApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQApp.debug.xcconfig"; path = "Target Support Files/Pods-DQApp/Pods-DQApp.debug.xcconfig"; sourceTree = "<group>"; };
 		71FE20A91350784331AFE3EC /* Pods-DQApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQApp.release.xcconfig"; path = "Target Support Files/Pods-DQApp/Pods-DQApp.release.xcconfig"; sourceTree = "<group>"; };
 		85D107EBE4ACB94F46C05A8A /* Pods_DQApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DQApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,10 +112,12 @@
 		02F70477294C4508003A68AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				02F7043C294A95BE003A68AD /* mapView.swift */,
+				02F7048A294EA094003A68AD /* BottomSheet */,
+				02F70481294E9D4A003A68AD /* MenuViews */,
 				02F704202948358C003A68AD /* SignUpView.swift */,
 				023B2405294814F80059654C /* SignInView.swift */,
 				023B23F9294809AD0059654C /* ContentView.swift */,
+				02F7047D294E9523003A68AD /* Menu.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +133,7 @@
 		02F70479294C450D003A68AD /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				02F7047B294CBD01003A68AD /* DQLocation.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -127,6 +144,26 @@
 				023B23F7294809AD0059654C /* DQAppApp.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		02F70481294E9D4A003A68AD /* MenuViews */ = {
+			isa = PBXGroup;
+			children = (
+				02F7047F294E9C1B003A68AD /* orderView.swift */,
+				02F70482294E9D6C003A68AD /* rewardView.swift */,
+				02F70484294E9D80003A68AD /* dealsView.swift */,
+				02F70486294E9D98003A68AD /* myDQview.swift */,
+				02F70488294E9DDC003A68AD /* currentOrderView.swift */,
+			);
+			path = MenuViews;
+			sourceTree = "<group>";
+		};
+		02F7048A294EA094003A68AD /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				02F7048B294EA0A6003A68AD /* BottomSheetViews.swift */,
+			);
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 		5F77DFA27680136E7D106D42 /* Pods */ = {
@@ -261,12 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F70485294E9D80003A68AD /* dealsView.swift in Sources */,
 				023B2406294814F80059654C /* SignInView.swift in Sources */,
+				02F70480294E9C1B003A68AD /* orderView.swift in Sources */,
 				02F704212948358C003A68AD /* SignUpView.swift in Sources */,
+				02F7047E294E9523003A68AD /* Menu.swift in Sources */,
+				02F70487294E9D98003A68AD /* myDQview.swift in Sources */,
 				02F7041F29482412003A68AD /* DQViewModel.swift in Sources */,
+				02F7048C294EA0A6003A68AD /* BottomSheetViews.swift in Sources */,
+				02F7047C294CBD01003A68AD /* DQLocation.swift in Sources */,
 				023B23FA294809AD0059654C /* ContentView.swift in Sources */,
 				023B23F8294809AD0059654C /* DQAppApp.swift in Sources */,
-				02F7043D294A95BE003A68AD /* mapView.swift in Sources */,
+				02F70483294E9D6C003A68AD /* rewardView.swift in Sources */,
+				02F70489294E9DDC003A68AD /* currentOrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
