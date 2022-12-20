@@ -10,7 +10,7 @@ struct MainNavigation: View {
     @State private var showingBottomSheet = true
     var body: some View {
             TabView{
-                orderView()
+                OrderView()
                     .tabItem{
                         Image(systemName: "questionmark")
                         Text("Order")

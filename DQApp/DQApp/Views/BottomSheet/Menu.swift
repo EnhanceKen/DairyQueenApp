@@ -15,42 +15,41 @@ struct Menu: View {
             }) {
                 Text("TREATS")
                     .foregroundColor(.black)
+                    .frame(width: 350, height: 100)
+                    .border(Color.black, width: 1)
+                    .cornerRadius(20, corners: [.topLeft, .bottomRight])
             }
-            .frame(width: 350, height: 100)
-            .border(Color.black, width: 1)
-            .cornerRadius(20, corners: [.topLeft, .bottomRight])
-            
             
             Button(action: {
                 // Button action here
             }) {
                 Text("FOOD")
                     .foregroundColor(.black)
+                    .frame(width: 350, height: 100)
+                    .border(Color.black, width: 1)
+                    .cornerRadius(20, corners: [.topLeft, .bottomRight])
             }
-            .frame(width: 350, height: 100)
-            .border(Color.black, width: 1)
-            .cornerRadius(20, corners: [.topLeft, .bottomRight])
             
             Button(action: {
                 // Button action here
             }) {
                 Text("DRINKS")
                     .foregroundColor(.black)
+                    .frame(width: 350, height: 100)
+                    .border(Color.black, width: 1)
+                    .cornerRadius(20, corners: [.topLeft, .bottomRight])
+                    
             }
-            .frame(width: 350, height: 100)
-            .border(Color.black, width: 1)
-            .cornerRadius(20, corners: [.topLeft, .bottomRight])
             
             Button(action: {
                 // Button action here
             }) {
                 Text("CAKES")
                     .foregroundColor(.black)
+                    .frame(width: 350, height: 100)
+                    .border(Color.black, width: 1)
+                    .cornerRadius(20, corners: [.topLeft, .bottomRight])
             }
-            .frame(width: 350, height: 100)
-            .border(Color.black, width: 1)
-            .cornerRadius(20, corners: [.topLeft, .bottomRight])
-            
             
             
             

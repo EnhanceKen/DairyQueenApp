@@ -9,11 +9,18 @@ import SwiftUI
 
 struct OrderView: View {
     var body: some View {
-        VStack {
-            
-            BottomSheet(content: {
-                BottomSheetViews()
-            }, initialPosition: 400, expansionBehavior: .fullScreen)
+        
+            ScrollView{
+                VStack{
+                Text("testing")
+                
+                Spacer(minLength: 0)
+                    .frame(height: 500)
+                
+                
+                    BottomSheetViews()
+                    
+                }
         }
     }
 }
