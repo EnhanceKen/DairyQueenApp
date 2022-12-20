@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
-struct Menu: View {
-    @State private var showingBottomSheet = false
+struct MainNavigation: View {
+    @State private var showingBottomSheet = true
     var body: some View {
-        ZStack{
             TabView{
                 orderView()
                     .tabItem{
                         Image(systemName: "questionmark")
                         Text("Order")
                     }
+                
                 rewardView()
                     .tabItem{
                         Image(systemName: "star")
@@ -38,18 +38,24 @@ struct Menu: View {
                     .tabItem{
                         Image(systemName: "bag")
                     }
-            }
-            .padding()
-            .sheet(isPresented: $showingBottomSheet) {
-                BottomSheetViews()
-                    .presentationDetents([.height(100), .large])
-            }
-        }
+                    
+            }.accentColor(.blue)
+            
+//            .sheet(isPresented: $showingBottomSheet) {
+//                Text("hello")
+//            }
+//            .padding()
+//            .sheet(isPresented: $showingBottomSheet) {
+//                Text("hello")
+////
+//            }
+            
+       
     }
 }
 
 struct Menu_Previews: PreviewProvider {
     static var previews: some View {
-        Menu()
+        MainNavigation()
     }
 }

@@ -6,21 +6,27 @@
 //
 
 import SwiftUI
+import SlidingTabView
 
 struct BottomSheetViews: View {
+    
+    @State private var tabindex = 0
     var body: some View {
-        HStack{
-            Button("Menu"){
-               
-            }
-            .font(.title)
+        VStack{
+            SlidingTabView(selection: $tabindex, tabs:
+                            ["menu", "recent Items"],
+                           animation: .linear,
+                           activeAccentColor: .black)
+            Spacer()
             
-            .padding()
-            Button("Recent Orders"){
-                
+            if tabindex == 0 {
+                Menu()
+            } else if tabindex == 1 {
+                Image(systemName: "car")
             }
-            .font(.title)
-            .font(.system(size: 2))
+            
+            
+            Spacer()
         }
     }
 }

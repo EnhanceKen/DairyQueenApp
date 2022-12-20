@@ -32,7 +32,7 @@ struct ContentView: View {
                 }
                 )
                 .padding()
-                NavigationLink(destination: Menu(),
+                NavigationLink(destination: MainNavigation(),
                                label: {
                     GuestButton()
                 }
