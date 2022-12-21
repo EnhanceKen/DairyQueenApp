@@ -7,26 +7,30 @@
 
 import SwiftUI
 
-struct OrderView: View {
-    var body: some View {
-        
-            ScrollView{
-                VStack{
-                Text("testing")
-                
-                Spacer(minLength: 0)
-                    .frame(height: 500)
-                
-                
-                    BottomSheetViews()
-                    
-                }
-        }
-    }
-}
-
-struct orderView_Previews: PreviewProvider {
-    static var previews: some View {
-        OrderView()
-    }
-}
+//struct OrderView: View {
+//    @State private var showingBottomSheet = true
+//    var body: some View {
+//        
+//        ScrollView{
+//            VStack{
+//                Text("testing")
+//                
+//                Spacer(minLength: 0)
+//                    .frame(height: 500)
+//                
+//                
+//                //                    BottomSheetViews()
+//                
+//                    .sheet(isPresented: $showingBottomSheet) {
+//                        BottomSheetViews()
+//                    }
+//            }
+//        }
+//    }
+//}
+//
+//struct orderView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        OrderView()
+//    }
+//}

@@ -12,6 +12,11 @@
 		023B23FC294809AF0059654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FB294809AF0059654C /* Assets.xcassets */; };
 		023B23FF294809AF0059654C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FE294809AF0059654C /* Preview Assets.xcassets */; };
 		023B2406294814F80059654C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B2405294814F80059654C /* SignInView.swift */; };
+		0255561E2952EDEC00602FCB /* BlizzardTreats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255561D2952EDEC00602FCB /* BlizzardTreats.swift */; };
+		025DD0A9295285ED009AFDEF /* slidingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0A8295285ED009AFDEF /* slidingMenu.swift */; };
+		025DD0AB295291D2009AFDEF /* BlueStripesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0AA295291D2009AFDEF /* BlueStripesView.swift */; };
+		025DD0AE29529707009AFDEF /* RedStripeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0AD29529707009AFDEF /* RedStripeView.swift */; };
+		025DD0B029529770009AFDEF /* OrangeStripeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0AF29529770009AFDEF /* OrangeStripeView.swift */; };
 		02F7041D294822FE003A68AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F7041C294822FE003A68AD /* GoogleService-Info.plist */; };
 		02F7041F29482412003A68AD /* DQViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7041E29482412003A68AD /* DQViewModel.swift */; };
 		02F704212948358C003A68AD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F704202948358C003A68AD /* SignUpView.swift */; };
@@ -41,6 +46,11 @@
 		023B23FB294809AF0059654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		023B23FE294809AF0059654C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		023B2405294814F80059654C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0255561D2952EDEC00602FCB /* BlizzardTreats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlizzardTreats.swift; sourceTree = "<group>"; };
+		025DD0A8295285ED009AFDEF /* slidingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slidingMenu.swift; sourceTree = "<group>"; };
+		025DD0AA295291D2009AFDEF /* BlueStripesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueStripesView.swift; sourceTree = "<group>"; };
+		025DD0AD29529707009AFDEF /* RedStripeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedStripeView.swift; sourceTree = "<group>"; };
+		025DD0AF29529770009AFDEF /* OrangeStripeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeStripeView.swift; sourceTree = "<group>"; };
 		02F7041C294822FE003A68AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		02F7041E29482412003A68AD /* DQViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQViewModel.swift; sourceTree = "<group>"; };
 		02F704202948358C003A68AD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -118,6 +128,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0255561F2952EDF800602FCB /* BLizzard */ = {
+			isa = PBXGroup;
+			children = (
+				0255561D2952EDEC00602FCB /* BlizzardTreats.swift */,
+			);
+			path = BLizzard;
+			sourceTree = "<group>";
+		};
+		025DD0A6295284A1009AFDEF /* Bottom */ = {
+			isa = PBXGroup;
+			children = (
+				02F704BA29517647003A68AD /* RecentItems.swift */,
+				02F7048B294EA0A6003A68AD /* BottomSheetViews.swift */,
+			);
+			path = Bottom;
+			sourceTree = "<group>";
+		};
+		025DD0A7295285D9009AFDEF /* sliding menu */ = {
+			isa = PBXGroup;
+			children = (
+				025DD0A8295285ED009AFDEF /* slidingMenu.swift */,
+			);
+			path = "sliding menu";
+			sourceTree = "<group>";
+		};
+		025DD0AC29529682009AFDEF /* Stripes */ = {
+			isa = PBXGroup;
+			children = (
+				025DD0AA295291D2009AFDEF /* BlueStripesView.swift */,
+				025DD0AD29529707009AFDEF /* RedStripeView.swift */,
+				025DD0AF29529770009AFDEF /* OrangeStripeView.swift */,
+			);
+			path = Stripes;
+			sourceTree = "<group>";
+		};
 		02F70476294C44F0003A68AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +202,7 @@
 		02F7047A294C450F003A68AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				025DD0AC29529682009AFDEF /* Stripes */,
 				023B23F7294809AD0059654C /* DQAppApp.swift */,
 				02F704BC29517CB2003A68AD /* extensions.swift */,
 			);
@@ -178,10 +224,9 @@
 		02F7048A294EA094003A68AD /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
-				02F704AF2951755B003A68AD /* MenuViews */,
-				02F7048B294EA0A6003A68AD /* BottomSheetViews.swift */,
 				02F704B829517623003A68AD /* Menu.swift */,
-				02F704BA29517647003A68AD /* RecentItems.swift */,
+				025DD0A6295284A1009AFDEF /* Bottom */,
+				02F704AF2951755B003A68AD /* MenuViews */,
 			);
 			path = BottomSheet;
 			sourceTree = "<group>";
@@ -189,10 +234,12 @@
 		02F704AF2951755B003A68AD /* MenuViews */ = {
 			isa = PBXGroup;
 			children = (
+				0255561F2952EDF800602FCB /* BLizzard */,
 				02F704B0295175E9003A68AD /* Treats.swift */,
 				02F704B2295175F5003A68AD /* Food.swift */,
 				02F704B4295175FE003A68AD /* Drinks.swift */,
 				02F704B629517607003A68AD /* Cakes.swift */,
+				025DD0A7295285D9009AFDEF /* sliding menu */,
 			);
 			path = MenuViews;
 			sourceTree = "<group>";
@@ -335,12 +382,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025DD0AB295291D2009AFDEF /* BlueStripesView.swift in Sources */,
 				02F70485294E9D80003A68AD /* dealsView.swift in Sources */,
 				02F704B729517607003A68AD /* Cakes.swift in Sources */,
 				023B2406294814F80059654C /* SignInView.swift in Sources */,
+				0255561E2952EDEC00602FCB /* BlizzardTreats.swift in Sources */,
 				02F704B5295175FE003A68AD /* Drinks.swift in Sources */,
 				02F704B3295175F5003A68AD /* Food.swift in Sources */,
 				02F704BB29517647003A68AD /* RecentItems.swift in Sources */,
+				025DD0B029529770009AFDEF /* OrangeStripeView.swift in Sources */,
 				02F70480294E9C1B003A68AD /* orderView.swift in Sources */,
 				02F704B929517623003A68AD /* Menu.swift in Sources */,
 				02F704212948358C003A68AD /* SignUpView.swift in Sources */,
@@ -355,6 +405,8 @@
 				023B23F8294809AD0059654C /* DQAppApp.swift in Sources */,
 				02F70483294E9D6C003A68AD /* rewardView.swift in Sources */,
 				02F70489294E9DDC003A68AD /* currentOrderView.swift in Sources */,
+				025DD0A9295285ED009AFDEF /* slidingMenu.swift in Sources */,
+				025DD0AE29529707009AFDEF /* RedStripeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

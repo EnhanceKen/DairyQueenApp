@@ -7,15 +7,14 @@
 
 import SwiftUI
 struct MainNavigation: View {
-    @State private var showingBottomSheet = true
     var body: some View {
             TabView{
-                OrderView()
+                slidingMenu()
                     .tabItem{
-                        Image(systemName: "questionmark")
+                        Image("icons8-hamburger-24")
                         Text("Order")
                     }
-                
+         
                 rewardView()
                     .tabItem{
                         Image(systemName: "star")
@@ -36,22 +35,11 @@ struct MainNavigation: View {
                 
                 currentOrderView()
                     .tabItem{
-                        Image(systemName: "bag")
+                        Image(systemName: "takeoutbag.and.cup.and.straw.fill")
                     }
-                    
+                
             }.accentColor(.blue)
-            
-//            .sheet(isPresented: $showingBottomSheet) {
-//                Text("hello")
-//            }
-//            .padding()
-//            .sheet(isPresented: $showingBottomSheet) {
-//                Text("hello")
-////
-//            }
-            
-       
-    }
+        }
 }
 
 struct Menu_Previews: PreviewProvider {

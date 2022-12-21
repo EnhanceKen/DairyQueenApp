@@ -11,13 +11,15 @@ struct Menu: View {
     var body: some View {
         VStack{
             Button(action: {
-                // Button action here
+//                Treats()
             }) {
                 Text("TREATS")
                     .foregroundColor(.black)
                     .frame(width: 350, height: 100)
-                    .border(Color.black, width: 1)
+                    .background(Color.white)
                     .cornerRadius(20, corners: [.topLeft, .bottomRight])
+                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0.0, y: 10)
+                
             }
             
             Button(action: {
@@ -26,8 +28,9 @@ struct Menu: View {
                 Text("FOOD")
                     .foregroundColor(.black)
                     .frame(width: 350, height: 100)
-                    .border(Color.black, width: 1)
+                    .background(Color.white)
                     .cornerRadius(20, corners: [.topLeft, .bottomRight])
+                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0.0, y: 10)
             }
             
             Button(action: {
@@ -36,9 +39,9 @@ struct Menu: View {
                 Text("DRINKS")
                     .foregroundColor(.black)
                     .frame(width: 350, height: 100)
-                    .border(Color.black, width: 1)
+                    .background(Color.white)
                     .cornerRadius(20, corners: [.topLeft, .bottomRight])
-                    
+                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0.0, y: 10)
             }
             
             Button(action: {
@@ -47,25 +50,14 @@ struct Menu: View {
                 Text("CAKES")
                     .foregroundColor(.black)
                     .frame(width: 350, height: 100)
-                    .border(Color.black, width: 1)
+                    .background(Color.white)
                     .cornerRadius(20, corners: [.topLeft, .bottomRight])
+                    .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0.0, y: 10)
             }
-            
-            
-            
-            
-            
-            
-            
-            
+
             
         }
-        
-        
-        
-        
-        
-        
+  
     }
 }
 

@@ -11,38 +11,73 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
+                
+                Text("Welcome")
+                    .font(.custom(
+                            "snellroundhand-bold",
+                            fixedSize: 26))
+                    .foregroundColor(.red)
+                
+                Text("DQ® Fan")
+                    .font(.custom(
+                            "helveticaNeue-CondensedBlack",
+                            fixedSize: 34))
+                    .foregroundColor(.blue)
+                
                 Text("Start earning exclusive rewards, accesing weekly deals, and saving your favorite treats and eats for convenient reordering.")
                 
-                    .font(.system(size: 16, weight: .regular, design: .default))
-                    .padding(2)
+                    .font(.custom(
+                            "CervoNeue",
+                            fixedSize: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .padding(2.0)
+                    .frame(width: 300, height: 100.0)
                 Text("*At participating Locations.")
-                    .font(.system(size: 12, weight: .light, design: .default))
-                Image(systemName: "house")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width:200,
-                           height:200,
-                           alignment: .center)
-                    .padding()
+                    .font(.system(size: 10, weight: .light, design: .default))
+                Spacer()
                 
-                NavigationLink(destination: SignInView(),
+                ZStack{
+                    Image("stareffect")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width:300,
+                               height:400,
+                               alignment: .center)
+                        .padding()
+                    
+                    Image("Blizzard")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width:400,
+                               height:400,
+                               alignment: .center)
+                        .padding()
+                }
+                Spacer()
+                
+                
+                Spacer()
+                NavigationLink(destination: SignInView().navigationBarBackButtonHidden(true),
                                label: {
                     RegisterButton()
                     
                 }
                 )
                 .padding()
-                NavigationLink(destination: MainNavigation(),
+                NavigationLink(destination: MainNavigation().navigationBarBackButtonHidden(true),
                                label: {
                     GuestButton()
                 }
                 )
                 
             }
-            .navigationTitle("Welcome")
+//            .navigationTitle("Welcome")
+            
         }
     }
 }
+
 
 
 struct RegisterButton: View {
@@ -53,14 +88,24 @@ struct RegisterButton: View {
                    alignment: .center)
             .background(Color.blue)
             .cornerRadius(20)
+            .font(.custom(
+                    "helveticaNeue-Medium",
+                    fixedSize: 11))
+            .fontWeight(.heavy)
     }
 }
 
 struct GuestButton: View {
+    
+    @State var navigationBarBackButtonHidden = true
+    
     var body: some View{
         Text("Continue as Guest")
             .foregroundColor(.blue)
             .frame(alignment: .center)
+            .font(.custom(
+                    "CervoNeue",
+                    fixedSize: 13))
     }
 }
 

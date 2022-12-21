@@ -10,11 +10,11 @@ import FirebaseAuth
 
 struct LoginView: View {
     @EnvironmentObject var viewModel: DQViewModel
-
+    
     var body: some View {
         NavigationView{
             if viewModel.signedIn{
-                Text("You are signed in")
+                MainNavigation()
             }
             else {
                 SignInView()
@@ -30,7 +30,7 @@ struct LoginView: View {
 struct SignInView: View {
     @State var email = ""
     @State var password = ""
-    
+    @State var isShowingNextView = false
     @EnvironmentObject var viewModel: DQViewModel
     // MARK: Signed in Checkpoint
     var body: some View {
@@ -39,9 +39,24 @@ struct SignInView: View {
         // MARK: VSTACK
         
         VStack{
-            NavigationLink("Create Account", destination: SignUpView())
-                .frame(alignment: .leading)
-                
+            HStack{
+                Text("Sign In")
+                    .font(.custom(
+                        "helveticaNeue-CondensedBold",
+                        fixedSize: 34))
+                    .foregroundColor(.blue)
+                    .padding(.leading, 21.0)
+                Spacer()
+            }
+            
+            HStack{
+                Text("Not a member yet?")
+                    .padding([.top, .leading], 21.0)
+                NavigationLink("Create Account", destination: SignUpView())
+                    .frame(alignment: .leading)
+                    .padding([.top], 21)
+                Spacer()
+            }
             
             TextField("Email Adress", text: $email)
                 .disableAutocorrection(true)
@@ -59,10 +74,10 @@ struct SignInView: View {
                 .cornerRadius(20)
             
             Button(action:{
+                self.isShowingNextView = true
                 guard !email.isEmpty, !password.isEmpty else {
-                    return
-                }
-                
+                    return        
+                }    
                 viewModel.signIn(email: email, password: password)
                 
             } , label: {
@@ -72,15 +87,20 @@ struct SignInView: View {
                     .background(Color.blue)
                     .cornerRadius(20)
             })
+            NavigationLink(destination: MainNavigation().navigationBarBackButtonHidden(true), isActive: $isShowingNextView) {
+                EmptyView()
+            }
+            
         }
         
+        
         HStack{
-            Spacer()
             Button(action: {
                 // Handles Navigation to forgot Password
             },label: {
                 Text("Forgot Password")
-                    .offset(x: -215)
+                    .padding(.leading, 21.0)
+                    .offset(x: -110)
             })
             .font(.system(size: 16, weight: .bold))
         }
@@ -90,7 +110,7 @@ struct SignInView: View {
         
         Spacer()
         
-            .navigationTitle("Sign In")
+        
         
     }
 }

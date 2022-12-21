@@ -60,10 +60,8 @@ struct SignUpView: View {
             
             
             Spacer()
-                        Button(action:{
-                            
+                        Button(action:{                            
                          registerNewUser()
-                            
                             self.isShowingNextView = true
                         }) {
                             Text("Continue")
@@ -77,7 +75,7 @@ struct SignUpView: View {
                         
                         
                         .navigationTitle("Lets Get Started")
-            NavigationLink(destination: MainNavigation(), isActive: $isShowingNextView) {
+            NavigationLink(destination: MainNavigation().navigationBarBackButtonHidden(true), isActive: $isShowingNextView) {
                 EmptyView()
             }
             
