@@ -19,7 +19,7 @@ struct BlizzardCard: View {
                 }label: { 
                     Image(blizzard.image)
                         .resizable()
-                        .frame(width:190, height: 190)
+                        .frame(width:190, height: 210)
                         .background(Color.white)
                     .scaledToFit()
                 }
