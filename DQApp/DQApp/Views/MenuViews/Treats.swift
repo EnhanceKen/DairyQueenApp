@@ -12,10 +12,12 @@ struct Treats: View {
         ZStack{       
             Image("BlueBackground")
                     .resizable()
+//                    .frame(width: 500.0)
                     .edgesIgnoringSafeArea(.all)
+            
             VStack{
                
-                NavigationLink(destination: BlizzardTreats(),
+                NavigationLink(destination: Blizzards(),
                                label: {
                     BlizzardTreatsButton()
                 }
@@ -72,6 +74,8 @@ struct BlizzardTreatsButton: View {
 
 struct Treats_Previews: PreviewProvider {
     static var previews: some View {
-        Treats()
+        NavigationView{
+            Treats()
+        }
     }
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 struct MainNavigation: View {
+    @StateObject var bagManager = BagManager()
     var body: some View {
             TabView{
                 slidingMenu()
@@ -33,9 +34,10 @@ struct MainNavigation: View {
                         Text("My DQ")
                     }
                 
-                currentOrderView()
+                 BagView()
+                    .environmentObject(BagManager())
                     .tabItem{
-                        Image(systemName: "takeoutbag.and.cup.and.straw.fill")
+                        BagButton(numberOfProducts: bagManager.products.count)
                     }
                 
             }.accentColor(.blue)

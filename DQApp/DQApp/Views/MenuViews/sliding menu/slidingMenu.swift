@@ -11,6 +11,7 @@ import SlidingTabView
 struct slidingMenu: View {
         @State private var tabindex = 0
         var body: some View {
+    
             VStack{
                 SlidingTabView(selection: $tabindex, tabs:
                                 ["TREATS", "FOOD", "DRINKS", "CAKES"],
@@ -20,7 +21,7 @@ struct slidingMenu: View {
                         "helveticaNeue-Medium",
                         fixedSize: 11))
                 .fontWeight(.semibold)
-                Spacer()
+//                Spacer()
                 
                 if tabindex == 0 {
                     Treats()

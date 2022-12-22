@@ -13,6 +13,13 @@
 		023B23FF294809AF0059654C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FE294809AF0059654C /* Preview Assets.xcassets */; };
 		023B2406294814F80059654C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B2405294814F80059654C /* SignInView.swift */; };
 		0255561E2952EDEC00602FCB /* BlizzardTreats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255561D2952EDEC00602FCB /* BlizzardTreats.swift */; };
+		0255562229533D4C00602FCB /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255562129533D4C00602FCB /* AddItem.swift */; };
+		02555624295396E500602FCB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02555623295396E500602FCB /* Product.swift */; };
+		0255562829539BD000602FCB /* BlizzardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255562729539BD000602FCB /* BlizzardCard.swift */; };
+		0255562A2953AB6800602FCB /* Blizzards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025556292953AB6800602FCB /* Blizzards.swift */; };
+		0255562C2953B07100602FCB /* BagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255562B2953B07100602FCB /* BagButton.swift */; };
+		0255562E2953C0B400602FCB /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255562D2953C0B400602FCB /* BagView.swift */; };
+		025556302953C26500602FCB /* BagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255562F2953C26500602FCB /* BagManager.swift */; };
 		025DD0A9295285ED009AFDEF /* slidingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0A8295285ED009AFDEF /* slidingMenu.swift */; };
 		025DD0AB295291D2009AFDEF /* BlueStripesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0AA295291D2009AFDEF /* BlueStripesView.swift */; };
 		025DD0AE29529707009AFDEF /* RedStripeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0AD29529707009AFDEF /* RedStripeView.swift */; };
@@ -47,6 +54,13 @@
 		023B23FE294809AF0059654C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		023B2405294814F80059654C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0255561D2952EDEC00602FCB /* BlizzardTreats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlizzardTreats.swift; sourceTree = "<group>"; };
+		0255562129533D4C00602FCB /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
+		02555623295396E500602FCB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0255562729539BD000602FCB /* BlizzardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlizzardCard.swift; sourceTree = "<group>"; };
+		025556292953AB6800602FCB /* Blizzards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blizzards.swift; sourceTree = "<group>"; };
+		0255562B2953B07100602FCB /* BagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagButton.swift; sourceTree = "<group>"; };
+		0255562D2953C0B400602FCB /* BagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
+		0255562F2953C26500602FCB /* BagManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagManager.swift; sourceTree = "<group>"; };
 		025DD0A8295285ED009AFDEF /* slidingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slidingMenu.swift; sourceTree = "<group>"; };
 		025DD0AA295291D2009AFDEF /* BlueStripesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueStripesView.swift; sourceTree = "<group>"; };
 		025DD0AD29529707009AFDEF /* RedStripeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedStripeView.swift; sourceTree = "<group>"; };
@@ -132,6 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				0255561D2952EDEC00602FCB /* BlizzardTreats.swift */,
+				0255562129533D4C00602FCB /* AddItem.swift */,
+				0255562729539BD000602FCB /* BlizzardCard.swift */,
+				025556292953AB6800602FCB /* Blizzards.swift */,
 			);
 			path = BLizzard;
 			sourceTree = "<group>";
@@ -166,6 +183,7 @@
 		02F70476294C44F0003A68AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				02555623295396E500602FCB /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,12 +191,15 @@
 		02F70477294C4508003A68AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				02F704B829517623003A68AD /* Menu.swift */,
+				02F704AF2951755B003A68AD /* MenuViews */,
 				02F7048A294EA094003A68AD /* BottomSheet */,
 				02F70481294E9D4A003A68AD /* tabBarViews */,
+				02F7047D294E9523003A68AD /* MainNavigation.swift */,
 				02F704202948358C003A68AD /* SignUpView.swift */,
 				023B2405294814F80059654C /* SignInView.swift */,
 				023B23F9294809AD0059654C /* ContentView.swift */,
-				02F7047D294E9523003A68AD /* MainNavigation.swift */,
+				0255562D2953C0B400602FCB /* BagView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +226,8 @@
 				025DD0AC29529682009AFDEF /* Stripes */,
 				023B23F7294809AD0059654C /* DQAppApp.swift */,
 				02F704BC29517CB2003A68AD /* extensions.swift */,
+				0255562B2953B07100602FCB /* BagButton.swift */,
+				0255562F2953C26500602FCB /* BagManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -224,9 +247,7 @@
 		02F7048A294EA094003A68AD /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
-				02F704B829517623003A68AD /* Menu.swift */,
 				025DD0A6295284A1009AFDEF /* Bottom */,
-				02F704AF2951755B003A68AD /* MenuViews */,
 			);
 			path = BottomSheet;
 			sourceTree = "<group>";
@@ -382,20 +403,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02555624295396E500602FCB /* Product.swift in Sources */,
 				025DD0AB295291D2009AFDEF /* BlueStripesView.swift in Sources */,
 				02F70485294E9D80003A68AD /* dealsView.swift in Sources */,
 				02F704B729517607003A68AD /* Cakes.swift in Sources */,
 				023B2406294814F80059654C /* SignInView.swift in Sources */,
 				0255561E2952EDEC00602FCB /* BlizzardTreats.swift in Sources */,
 				02F704B5295175FE003A68AD /* Drinks.swift in Sources */,
+				0255562E2953C0B400602FCB /* BagView.swift in Sources */,
 				02F704B3295175F5003A68AD /* Food.swift in Sources */,
 				02F704BB29517647003A68AD /* RecentItems.swift in Sources */,
 				025DD0B029529770009AFDEF /* OrangeStripeView.swift in Sources */,
+				0255562C2953B07100602FCB /* BagButton.swift in Sources */,
 				02F70480294E9C1B003A68AD /* orderView.swift in Sources */,
 				02F704B929517623003A68AD /* Menu.swift in Sources */,
 				02F704212948358C003A68AD /* SignUpView.swift in Sources */,
 				02F7047E294E9523003A68AD /* MainNavigation.swift in Sources */,
+				025556302953C26500602FCB /* BagManager.swift in Sources */,
 				02F70487294E9D98003A68AD /* myDQview.swift in Sources */,
+				0255562A2953AB6800602FCB /* Blizzards.swift in Sources */,
+				0255562229533D4C00602FCB /* AddItem.swift in Sources */,
 				02F7041F29482412003A68AD /* DQViewModel.swift in Sources */,
 				02F7048C294EA0A6003A68AD /* BottomSheetViews.swift in Sources */,
 				02F7047C294CBD01003A68AD /* DQLocation.swift in Sources */,
@@ -405,6 +432,7 @@
 				023B23F8294809AD0059654C /* DQAppApp.swift in Sources */,
 				02F70483294E9D6C003A68AD /* rewardView.swift in Sources */,
 				02F70489294E9DDC003A68AD /* currentOrderView.swift in Sources */,
+				0255562829539BD000602FCB /* BlizzardCard.swift in Sources */,
 				025DD0A9295285ED009AFDEF /* slidingMenu.swift in Sources */,
 				025DD0AE29529707009AFDEF /* RedStripeView.swift in Sources */,
 			);
