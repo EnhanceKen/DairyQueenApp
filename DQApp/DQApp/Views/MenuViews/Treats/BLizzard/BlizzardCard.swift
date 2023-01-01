@@ -27,7 +27,7 @@ struct BlizzardCard: View {
                     Text(blizzard.name)
                         .font(.custom(
                             "helveticaNeue-Medium",
-                            fixedSize: 11))
+                            fixedSize: 10))
                         .multilineTextAlignment(.center)
                 }
                 

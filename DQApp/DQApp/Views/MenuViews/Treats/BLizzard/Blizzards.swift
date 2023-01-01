@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Blizzards: View {
-    @StateObject var bagManager = BagManager()
+    @ObservedObject var bagManager = BagManager()
     var columns = [GridItem(.adaptive(minimum: 180), spacing: 1)]
     
     var body: some View {

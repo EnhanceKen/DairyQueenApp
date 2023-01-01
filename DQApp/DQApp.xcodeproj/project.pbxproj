@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0234F74E2954EDC80012C528 /* PickupTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234F74D2954EDC80012C528 /* PickupTimeRow.swift */; };
 		023B23F8294809AD0059654C /* DQAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B23F7294809AD0059654C /* DQAppApp.swift */; };
-		023B23FA294809AD0059654C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B23F9294809AD0059654C /* ContentView.swift */; };
+		023B23FA294809AD0059654C /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B23F9294809AD0059654C /* Welcome.swift */; };
 		023B23FC294809AF0059654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FB294809AF0059654C /* Assets.xcassets */; };
 		023B23FF294809AF0059654C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FE294809AF0059654C /* Preview Assets.xcassets */; };
 		023B2406294814F80059654C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B2405294814F80059654C /* SignInView.swift */; };
@@ -19,6 +20,8 @@
 		0255562E2953C0B400602FCB /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255562D2953C0B400602FCB /* BagView.swift */; };
 		025556302953C26500602FCB /* BagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255562F2953C26500602FCB /* BagManager.swift */; };
 		02555633295410B300602FCB /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02555632295410B300602FCB /* ProductRow.swift */; };
+		0255563A2954DF5F00602FCB /* PickupStoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025556392954DF5F00602FCB /* PickupStoreRow.swift */; };
+		0255563C2954EACB00602FCB /* PickupDetailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255563B2954EACB00602FCB /* PickupDetailsRow.swift */; };
 		025DD0A9295285ED009AFDEF /* slidingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0A8295285ED009AFDEF /* slidingMenu.swift */; };
 		025DD0AB295291D2009AFDEF /* BlueStripesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0AA295291D2009AFDEF /* BlueStripesView.swift */; };
 		025DD0AE29529707009AFDEF /* RedStripeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0AD29529707009AFDEF /* RedStripeView.swift */; };
@@ -46,9 +49,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0234F74D2954EDC80012C528 /* PickupTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupTimeRow.swift; sourceTree = "<group>"; };
 		023B23F4294809AD0059654C /* DQApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DQApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023B23F7294809AD0059654C /* DQAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQAppApp.swift; sourceTree = "<group>"; };
-		023B23F9294809AD0059654C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		023B23F9294809AD0059654C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		023B23FB294809AF0059654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		023B23FE294809AF0059654C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		023B2405294814F80059654C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		0255562D2953C0B400602FCB /* BagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
 		0255562F2953C26500602FCB /* BagManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagManager.swift; sourceTree = "<group>"; };
 		02555632295410B300602FCB /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		025556392954DF5F00602FCB /* PickupStoreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupStoreRow.swift; sourceTree = "<group>"; };
+		0255563B2954EACB00602FCB /* PickupDetailsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupDetailsRow.swift; sourceTree = "<group>"; };
 		025DD0A8295285ED009AFDEF /* slidingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slidingMenu.swift; sourceTree = "<group>"; };
 		025DD0AA295291D2009AFDEF /* BlueStripesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueStripesView.swift; sourceTree = "<group>"; };
 		025DD0AD29529707009AFDEF /* RedStripeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedStripeView.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 		0255563129540B7300602FCB /* BagItems */ = {
 			isa = PBXGroup;
 			children = (
+				025556382954DF1200602FCB /* pickUpRows */,
 				0255562D2953C0B400602FCB /* BagView.swift */,
 				02555632295410B300602FCB /* ProductRow.swift */,
 			);
@@ -189,6 +196,16 @@
 				02F704B629517607003A68AD /* Cakes.swift */,
 			);
 			path = Cakes;
+			sourceTree = "<group>";
+		};
+		025556382954DF1200602FCB /* pickUpRows */ = {
+			isa = PBXGroup;
+			children = (
+				025556392954DF5F00602FCB /* PickupStoreRow.swift */,
+				0255563B2954EACB00602FCB /* PickupDetailsRow.swift */,
+				0234F74D2954EDC80012C528 /* PickupTimeRow.swift */,
+			);
+			path = pickUpRows;
 			sourceTree = "<group>";
 		};
 		025DD0A6295284A1009AFDEF /* Bottom */ = {
@@ -236,7 +253,7 @@
 				02F7047D294E9523003A68AD /* MainNavigation.swift */,
 				02F704202948358C003A68AD /* SignUpView.swift */,
 				023B2405294814F80059654C /* SignInView.swift */,
-				023B23F9294809AD0059654C /* ContentView.swift */,
+				023B23F9294809AD0059654C /* Welcome.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -440,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0255563A2954DF5F00602FCB /* PickupStoreRow.swift in Sources */,
 				02555624295396E500602FCB /* Product.swift in Sources */,
 				025DD0AB295291D2009AFDEF /* BlueStripesView.swift in Sources */,
 				02F70485294E9D80003A68AD /* dealsView.swift in Sources */,
@@ -449,8 +467,10 @@
 				02F704B5295175FE003A68AD /* Drinks.swift in Sources */,
 				0255562E2953C0B400602FCB /* BagView.swift in Sources */,
 				02F704B3295175F5003A68AD /* Food.swift in Sources */,
+				0255563C2954EACB00602FCB /* PickupDetailsRow.swift in Sources */,
 				02F704BB29517647003A68AD /* RecentItems.swift in Sources */,
 				025DD0B029529770009AFDEF /* OrangeStripeView.swift in Sources */,
+				0234F74E2954EDC80012C528 /* PickupTimeRow.swift in Sources */,
 				0255562C2953B07100602FCB /* BagButton.swift in Sources */,
 				02F70480294E9C1B003A68AD /* orderView.swift in Sources */,
 				02F704B929517623003A68AD /* Menu.swift in Sources */,
@@ -462,7 +482,7 @@
 				02F7041F29482412003A68AD /* DQViewModel.swift in Sources */,
 				02F7048C294EA0A6003A68AD /* BottomSheetViews.swift in Sources */,
 				02F7047C294CBD01003A68AD /* DQLocation.swift in Sources */,
-				023B23FA294809AD0059654C /* ContentView.swift in Sources */,
+				023B23FA294809AD0059654C /* Welcome.swift in Sources */,
 				02F704BD29517CB2003A68AD /* extensions.swift in Sources */,
 				02F704B1295175E9003A68AD /* Treats.swift in Sources */,
 				023B23F8294809AD0059654C /* DQAppApp.swift in Sources */,

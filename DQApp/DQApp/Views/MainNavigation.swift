@@ -7,7 +7,8 @@
 
 import SwiftUI
 struct MainNavigation: View {
-    @StateObject var bagManager = BagManager()
+    @ObservedObject var bagManager = BagManager()
+  
     var body: some View {
             TabView{
                 slidingMenu()
@@ -35,7 +36,7 @@ struct MainNavigation: View {
                     }
                 
                  BagView()
-                    .environmentObject(BagManager())
+                    .environmentObject(bagManager)
                     .tabItem{
                         BagButton(numberOfProducts: bagManager.products.count)
                     }
@@ -47,5 +48,6 @@ struct MainNavigation: View {
 struct Menu_Previews: PreviewProvider {
     static var previews: some View {
         MainNavigation()
+            
     }
 }

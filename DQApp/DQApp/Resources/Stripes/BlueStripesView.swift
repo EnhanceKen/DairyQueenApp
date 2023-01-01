@@ -11,7 +11,7 @@
 //    let numberOfStrips: Int = 175
 //    let lineWidth: CGFloat = 1
 //    let borderLineWidth: CGFloat = 50
-//    let color = Color.orange
+//    let color = Color.blue
 //    
 //    var body: some View {
 //        

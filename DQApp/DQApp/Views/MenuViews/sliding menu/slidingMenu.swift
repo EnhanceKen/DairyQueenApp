@@ -13,10 +13,12 @@ struct slidingMenu: View {
         var body: some View {
     
             VStack{
+            
                 SlidingTabView(selection: $tabindex, tabs:
                                 ["TREATS", "FOOD", "DRINKS", "CAKES"],
                                animation: .linear,
                                activeAccentColor: .black)
+               
                 .font(.custom(
                         "helveticaNeue-Medium",
                         fixedSize: 11))
