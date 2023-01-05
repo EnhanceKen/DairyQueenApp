@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
+import AuthenticationServices
 
 struct LoginView: View {
     @EnvironmentObject var viewModel: DQViewModel
@@ -26,12 +27,40 @@ struct LoginView: View {
     }
 }
 
+struct appleView: View{
+    @AppStorage("email") var email: String = ""
+    @AppStorage("firstName") var firstName: String = ""
+    @AppStorage("lastName") var lastName: String = ""
+    @AppStorage("userId") var userId: String = ""
+    
+
+    private var appleSignedIn: Bool{
+        !userId.isEmpty
+    }
+    var body: some View{
+        VStack{
+            if userId.isEmpty{
+                SignInView()
+            }
+            else{
+                MainNavigation()
+            }
+            
+        }
+        
+    }
+}
+
+
+
+
 
 struct SignInView: View {
     @State var email = ""
     @State var password = ""
     @State var isShowingNextView = false
     @EnvironmentObject var viewModel: DQViewModel
+    
     // MARK: Signed in Checkpoint
     var body: some View {
         
@@ -106,6 +135,7 @@ struct SignInView: View {
         }
         .padding()
         
+     AppleSignedInView()
         
         
         Spacer()
@@ -114,6 +144,57 @@ struct SignInView: View {
         
     }
 }
+
+struct AppleSignedInView: View {
+    @AppStorage("email") var email: String = ""
+    @AppStorage("firstName") var firstName: String = ""
+    @AppStorage("lastName") var lastName: String = ""
+    @AppStorage("userId") var userId: String = ""
+    
+
+    var body: some View {
+        SignInWithAppleButton(.continue) { request in
+            
+            request.requestedScopes = [.email, .fullName]
+            
+        } onCompletion: { result in
+            
+            switch result{
+            case .success(let auth):
+                
+                switch auth.credential{
+                case let credential as ASAuthorizationAppleIDCredential:
+                    
+                    let email = credential.email
+                    let firstName = credential.fullName?.givenName
+                    let lastName = credential.fullName?.familyName
+                    
+                    self.email = email ?? ""
+                    self.userId = userId
+                    self.firstName = firstName ?? ""
+                    self.lastName = lastName ?? ""
+                    
+                    
+                    // User ID
+                    let userId = credential.user
+                default:
+                    break
+                }
+                
+            case .failure(let error):
+                print(error)
+            }
+            
+        }
+        .frame(width: 350, height: 35)
+        .padding()
+        .cornerRadius(40)
+    }
+}
+
+
+
+
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {

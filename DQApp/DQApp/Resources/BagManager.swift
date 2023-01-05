@@ -21,7 +21,10 @@ class BagManager: ObservableObject{
         products = products.filter{ $0 .id != product.id}
         total -= Int(product.price)
     }
-    
+     func addDetail(product: Product) {
+         products.append(product)
+         total += Int(product.price)
+     }
     
     
 }

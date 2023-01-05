@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02251D1F296657BF00B5926D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02251D1E296657BF00B5926D /* DetailView.swift */; };
+		02251D2129668D5600B5926D /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02251D2029668D5600B5926D /* DetailRow.swift */; };
 		0234F74E2954EDC80012C528 /* PickupTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234F74D2954EDC80012C528 /* PickupTimeRow.swift */; };
+		0234F75029622E370012C528 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234F74F29622E370012C528 /* PaymentButton.swift */; };
 		023B23F8294809AD0059654C /* DQAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B23F7294809AD0059654C /* DQAppApp.swift */; };
 		023B23FA294809AD0059654C /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B23F9294809AD0059654C /* Welcome.swift */; };
 		023B23FC294809AF0059654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023B23FB294809AF0059654C /* Assets.xcassets */; };
@@ -49,7 +52,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02251CD52963B18500B5926D /* DQApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DQApp.entitlements; sourceTree = "<group>"; };
+		02251D1E296657BF00B5926D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		02251D2029668D5600B5926D /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
 		0234F74D2954EDC80012C528 /* PickupTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupTimeRow.swift; sourceTree = "<group>"; };
+		0234F74F29622E370012C528 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		023B23F4294809AD0059654C /* DQApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DQApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023B23F7294809AD0059654C /* DQAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQAppApp.swift; sourceTree = "<group>"; };
 		023B23F9294809AD0059654C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
@@ -105,6 +112,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02251CD62963C3C600B5926D /* SignInSignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignInSignUp;
+			sourceTree = "<group>";
+		};
 		023B23EB294809AD0059654C = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +140,7 @@
 		023B23F6294809AD0059654C /* DQApp */ = {
 			isa = PBXGroup;
 			children = (
+				02251CD52963B18500B5926D /* DQApp.entitlements */,
 				02F70479294C450D003A68AD /* Network */,
 				02F7047A294C450F003A68AD /* Resources */,
 				02F70476294C44F0003A68AD /* Model */,
@@ -161,6 +176,9 @@
 				025556382954DF1200602FCB /* pickUpRows */,
 				0255562D2953C0B400602FCB /* BagView.swift */,
 				02555632295410B300602FCB /* ProductRow.swift */,
+				0234F74F29622E370012C528 /* PaymentButton.swift */,
+				02251D1E296657BF00B5926D /* DetailView.swift */,
+				02251D2029668D5600B5926D /* DetailRow.swift */,
 			);
 			path = BagItems;
 			sourceTree = "<group>";
@@ -246,6 +264,7 @@
 		02F70477294C4508003A68AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				02251CD62963C3C600B5926D /* SignInSignUp */,
 				0255563129540B7300602FCB /* BagItems */,
 				02F704AF2951755B003A68AD /* MenuViews */,
 				02F7048A294EA094003A68AD /* BottomSheet */,
@@ -458,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0255563A2954DF5F00602FCB /* PickupStoreRow.swift in Sources */,
+				02251D1F296657BF00B5926D /* DetailView.swift in Sources */,
 				02555624295396E500602FCB /* Product.swift in Sources */,
 				025DD0AB295291D2009AFDEF /* BlueStripesView.swift in Sources */,
 				02F70485294E9D80003A68AD /* dealsView.swift in Sources */,
@@ -481,6 +501,7 @@
 				0255562A2953AB6800602FCB /* Blizzards.swift in Sources */,
 				02F7041F29482412003A68AD /* DQViewModel.swift in Sources */,
 				02F7048C294EA0A6003A68AD /* BottomSheetViews.swift in Sources */,
+				0234F75029622E370012C528 /* PaymentButton.swift in Sources */,
 				02F7047C294CBD01003A68AD /* DQLocation.swift in Sources */,
 				023B23FA294809AD0059654C /* Welcome.swift in Sources */,
 				02F704BD29517CB2003A68AD /* extensions.swift in Sources */,
@@ -490,6 +511,7 @@
 				02F70489294E9DDC003A68AD /* currentOrderView.swift in Sources */,
 				0255562829539BD000602FCB /* BlizzardCard.swift in Sources */,
 				025DD0A9295285ED009AFDEF /* slidingMenu.swift in Sources */,
+				02251D2129668D5600B5926D /* DetailRow.swift in Sources */,
 				025DD0AE29529707009AFDEF /* RedStripeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +639,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DQApp/DQApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DQApp/Preview Content\"";
@@ -646,6 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DQApp/DQApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DQApp/Preview Content\"";

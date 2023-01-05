@@ -59,6 +59,9 @@ struct BagView: View {
                                 .fontWeight(.semibold)
                         }
                         .padding()
+                        
+                        PaymentButton(action: {})
+                        
                         Spacer()
                     } else {
                         ZStack {

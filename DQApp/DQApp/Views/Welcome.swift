@@ -25,16 +25,16 @@ struct ContentView: View {
                     .foregroundColor(.blue)
                 
                 Text("Start earning exclusive rewards, accesing weekly deals, and saving your favorite treats and eats for convenient reordering.")
-                
                     .font(.custom(
-                            "CervoNeue",
-                            fixedSize: 15))
-                    .fontWeight(.light)
+                        "helveticaNeue-light",
+                        fixedSize: 13))
                     .multilineTextAlignment(.center)
 //                    .padding(2.0)
                     .frame(width: 300, height: 100.0)
                 Text("*At participating Locations.")
-                    .font(.system(size: 10, weight: .light, design: .default))
+                    .font(.custom(
+                        "helveticaNeue-light",
+                        fixedSize: 10))
                 Spacer()
                 
                 ZStack{

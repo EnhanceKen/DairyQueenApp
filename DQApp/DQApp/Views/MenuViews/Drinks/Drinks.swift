@@ -23,7 +23,7 @@ struct Drinks: View {
                             "helveticaNeue-Medium",
                             fixedSize: 20))
                     .fontWeight(.semibold)
-                    .frame(width: 350, height: 100)
+                    .frame(width: 350, height: 85)
                     .background(Color.white)
                     .cornerRadius(20, corners: [.topLeft, .bottomRight])
                     .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0.0, y: 10)
